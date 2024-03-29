@@ -1,0 +1,26 @@
+* {
+    /* border: solid black; */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+section {
+    border: solid rgb(169, 169, 169);
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

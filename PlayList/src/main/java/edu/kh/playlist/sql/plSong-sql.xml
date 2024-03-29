@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+	<entry key="insert">
+		INSERT INTO PLAYLIST_SONG
+		VALUES(?, ?)
+	</entry>
+	
+	<entry key="check">
+		SELECT COUNT(*) 
+		FROM PLAYLIST_SONG
+		WHERE PLAYLIST_NO = ?
+		AND SONG_NO = ?
+	</entry>
+	
+	<entry key="selectMember">
+		SELECT SONG_NO, SONG_TITLE, SONG_ARTIST, SONG_ALBUM, SONG_LIKE, PLAYLIST_NO, MEMBER_NO
+		FROM PLAYLIST_SONG
+		JOIN SONG USING(SONG_NO)
+		JOIN PLAYLISTS USING(PLAYLIST_NO)
+		WHERE SONG_DEL_FL = 'N'
+		AND MEMBER_NO = ?
+		AND PLAYLIST_NO = ?
+	</entry>
+	
+</properties>

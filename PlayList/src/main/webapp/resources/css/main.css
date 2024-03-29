@@ -1,0 +1,101 @@
+* {
+    /* border: solid black; */
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 30px;
+}
+
+section {
+    border: solid rgb(169, 169, 169);
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section {
+    border: solid rgb(169, 169, 169);
+    border-radius: 10px;
+}
+
+.id-div, .pw-div {
+    margin: 10px;
+    display: flex;
+}
+
+.id-div > p, .pw-div > p {
+    flex-basis: 30%;
+    text-align: center;
+    size: 30px;
+    line-height: 40px;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.login-btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+.login-btn-div > * {
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    text-decoration: none;
+    color: black;
+    size: 30px;
+    font-size: 30px;
+}
+
+.login-btn-div > button:hover, .login-btn-div > a:hover {
+    cursor: pointer;
+}
+
+.main-function {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-section {
+    width: 300px;
+    display: flex;
+    margin: 30px;
+    align-content: space-between;
+}
+.user-section > div {
+    flex-basis: 30%;
+}
+ 
+.main-function > a {
+    font-size: 80px;
+}
+
+.main-function > span {
+    font-size: 15px;
+}
+
+.member-manage-section {
+    margin-top: 200px;
+}
+.member-manage-section {
+    font-size: 15px;
+}

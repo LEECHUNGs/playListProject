@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+	<entry key="selectAll">
+		SELECT PLAYLIST_NO, PLAYLIST_TITLE
+		FROM PLAYLISTS
+		WHERE MEMBER_NO = ?
+	</entry>
+	
+	<entry key="delete">
+		DELETE FROM PLAYLIST_SONG
+		WHERE PLAYLIST_NO = ?
+		AND SONG_NO = ?
+	</entry>
+	
+</properties>
